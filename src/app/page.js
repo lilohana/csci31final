@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import PageTitle from './components/PageTitle'
 import PageContent from './components/PageContent'
 import Card from './components/Card'
+import Footer from './components/Footer'
 
 import { createClient } from '@supabase/supabase-js'
 
@@ -26,6 +27,7 @@ export default async function Home() {
           ))}
         </div>
         <PageContent content="North State's Premier Strongman Training Center" />
+        <Footer />
       </div>
     </div>
   )

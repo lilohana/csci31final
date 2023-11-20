@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import PageTitle from '../components/PageTitle'
 import PageContent from '../components/PageContent'
+import Footer from '../components/Footer'
 
 export default function ourStory() {
   return (
@@ -19,6 +20,7 @@ Here, every piece of equipment tells a tale of resilience, echoing the spirit of
 Northern California's premier strongman gym isn't just a place to lift; it's a haven for those who aspire to redefine their limits. Join us in the epicenter of strength, where the journey is as mighty as the lift. Welcome to a realm where ordinary becomes extraordinary, and every rep is a step toward realizing your strongest self."
         />
       </div>
+      <Footer />
     </div>
   )
 }
