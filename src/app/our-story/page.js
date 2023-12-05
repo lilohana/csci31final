@@ -4,8 +4,32 @@ import PageTitle from '../components/PageTitle'
 import PageContent from '../components/PageContent'
 import Footer from '../components/Footer'
 import CardFrom from '../components/CardForm'
+import MyTable from '../components/MyTable'
+import { findCards } from '../utils/supabase-client'
 
-export default function ourStory() {
+export const revalidate = 0
+
+const cardTableColumns = [
+  {
+    title: 'Title',
+    key: 'title',
+  },
+  {
+    title: 'Subtitle',
+    key: 'subtitle',
+  },
+  {
+    title: 'Image',
+    key: 'img',
+  },
+  {
+    title: 'Description',
+    key: 'description',
+  },
+]
+
+export default async function ourStory() {
+  const cards = await findCards()
   return (
     <div>
       <Navbar />
@@ -21,6 +45,7 @@ Here, every piece of equipment tells a tale of resilience, echoing the spirit of
 Northern California's premier strongman gym isn't just a place to lift; it's a haven for those who aspire to redefine their limits. Join us in the epicenter of strength, where the journey is as mighty as the lift. Welcome to a realm where ordinary becomes extraordinary, and every rep is a step toward realizing your strongest self."
         />
         <CardFrom />
+        <MyTable columns={cardTableColumns} records={cards} />
       </div>
       <Footer />
     </div>
