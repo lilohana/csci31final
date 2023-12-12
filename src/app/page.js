@@ -20,6 +20,7 @@ export default async function Home() {
         <div className="flex flex-wrap flex-auto gap-6 my-6">
           {cards.map((card) => (
             <Card
+              key={card.id}
               id={card.id}
               title={card.title}
               subtitle={card.subtitle}
