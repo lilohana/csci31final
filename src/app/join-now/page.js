@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import PageTitle from '../components/PageTitle'
 import PageContent from '../components/PageContent'
 import Footer from '../components/Footer'
+import PricingComponent from '../components/pricing'
 
 export default function JoinNow() {
   return (
@@ -11,6 +12,7 @@ export default function JoinNow() {
       <div className="m-12">
         <PageTitle title="JOIN NOW" />
         <PageContent content="Join now" />
+        <PricingComponent />
       </div>
       <Footer />
     </div>
