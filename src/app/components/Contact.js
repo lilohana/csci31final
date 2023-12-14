@@ -2,65 +2,60 @@ import React from 'react'
 
 const ContactComponent = () => {
   return (
-    <div className="flex flex-col">
-      <div className="spacer bg-light">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-center">
-            <div className="text-center">
-              <h1 className="title font-bold">Contact Form</h1>
-              <h6 className="subtitle">
-                Here you can check Demos we created based on WrapKit. Its quite easy to Create your own dream website
-                &amp; dashboard in No-time.
-              </h6>
-            </div>
+    <section className="bg-white dark:bg-gray-900">
+      <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+          Find Us
+        </h2>
+        <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+          Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let
+          us know.
+        </p>
+        <form action="#" className="space-y-8">
+          <div>
+            <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+              Your email
+            </label>
+            <input
+              type="email"
+              id="email"
+              className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              placeholder="name@flowbite.com"
+              require
+            />
           </div>
-        </div>
-      </div>
-      <div className="contact1">
-        <div className="flex">
-          <div className="container mx-auto px-4">
-            <div className="spacer">
-              <div className="flex m-0">
-                <div className="contact-box p-r-40">
-                  <h4 className="title">Quick Contact</h4>
-                  <form>
-                    <div className="flex flex-wrap">
-                      <div className="m-t-15 w-full md:w-1/2">
-                        <input type="text" placeholder="name" className="form-input" />
-                      </div>
-                      <div className="m-t-15 w-full md:w-1/2">
-                        <input type="text" placeholder="email" className="form-input" />
-                      </div>
-                      <div className="m-t-15 w-full">
-                        <textarea name="text" placeholder="message" className="form-input"></textarea>
-                      </div>
-                      <div className="w-full">
-                        <button type="submit" className="btn btn-danger-gradiant m-t-20 btn-arrow">
-                          <span>
-                            Submit <i className="ti-arrow-right"></i>
-                          </span>
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div className="detail-box p-40 bg-info">
-                  <h2 className="text-white">Wrappixel Headquarters</h2>
-                  <p className="text-white m-t-30 op-8">
-                    251 546 9442
-                    <br /> info@wrappixel.com
-                  </p>
-                  <p className="text-white op-8">
-                    601 Sherwood Ave.
-                    <br /> San Bernandino, CA 92404
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div>
+            <label for="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+              Subject
+            </label>
+            <input
+              type="text"
+              id="subject"
+              className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              placeholder="Let us know how we can help you"
+              required
+            />
           </div>
-        </div>
+          <div className="sm:col-span-2">
+            <label for="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">
+              Your message
+            </label>
+            <textarea
+              id="message"
+              rows="6"
+              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+              placeholder="Leave a comment..."
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+          >
+            Send message
+          </button>
+        </form>
       </div>
-    </div>
+    </section>
   )
 }
 

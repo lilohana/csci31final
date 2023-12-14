@@ -11,7 +11,6 @@ export default function Contact() {
       <Navbar />
       <div className="m-12">
         <PageTitle title="Contact" />
-        <PageContent content="Here's the contact info" />
         <ContactComponent />
       </div>
       <Footer />
