@@ -4,8 +4,8 @@ const menuItems = [
     href: '/',
   },
   {
-    title: 'JOIN NOW',
-    href: '/join-now',
+    title: 'Membership',
+    href: '/membership',
   },
   {
     title: 'Our Story',

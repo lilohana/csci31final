@@ -11,7 +11,6 @@ export default function JoinNow() {
       <Navbar />
       <div className="m-12">
         <PageTitle title="JOIN NOW" />
-        <PageContent content="Join now" />
         <PricingComponent />
       </div>
       <Footer />
