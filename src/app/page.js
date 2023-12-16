@@ -18,7 +18,7 @@ export default async function Home() {
         <PageTitle title="Ironhaus" />
         <p className="text-7xl text-white font-bold text-center">Welcome to Ironhaus</p>
         <p className="mt-10 mb-20 text-3xl font-light text-white text-center">
-          North State's Premier Strongman Training Center
+          North State&apos;s Premier Strongman Training Center
         </p>
         <div className="flex grow gap-6 justify-center flex-wrap lg:flex-nowrap">
           {cards.map((card) => (
@@ -33,7 +33,7 @@ export default async function Home() {
           ))}
         </div>
         <p className="text-white text-3xl pt-20">
-          Welcome to Ironhaus, where strength takes center stage. As the North State's Premier Strongman Training
+          Welcome to Ironhaus, where strength takes center stage. As the North State&apos;s Premier Strongman Training
           Center, our facility is equipped with every specialty implement you could dream of for the sport of Strongman
           and Powerlifting. Train alongside seasoned veterans and be part of a community fueled by collective strength
           pursuits.

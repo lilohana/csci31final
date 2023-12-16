@@ -44,7 +44,7 @@ export default async function ourStory() {
         ></div>
         <p className="text-3xl text-white p-20">
           In the rugged landscapes of Northern California, a local strongman dared to dream big. Fueled by a passion for
-          strength and a vision for a community united by power, he embarked on a journey to establish the region's
+          strength and a vision for a community united by power, he embarked on a journey to establish the region&apos;s
           inaugural premier strongman gym. With unwavering determination, he transformed a mere idea into a powerhouse
           destination for those seeking to push their limits.
         </p>
@@ -58,7 +58,7 @@ export default async function ourStory() {
             Our story begins with a commitment to authenticity, grit, and the relentless pursuit of strength. Inspired
             by the unique challenges posed by strongman competitions, our founder envisioned a space where individuals
             could sculpt their bodies, minds, and fortitude. This vision materialized into the stronghold that is now
-            Northern California's first and foremost premier strongman gym.
+            Northern California&apos;s first and foremost premier strongman gym.
           </p>
         </div>
         <div
@@ -81,10 +81,10 @@ export default async function ourStory() {
           }}
         >
           <p className="w-80 text-xl text-white">
-            Northern California's premier strongman gym isn't just a place to lift; it's a haven for those who aspire to
-            redefine their limits. Join us in the epicenter of strength, where the journey is as mighty as the lift.
-            Welcome to a realm where ordinary becomes extraordinary, and every rep is a step toward realizing your
-            strongest self."
+            Northern California&apos;s premier strongman gym isn&apos;t just a place to lift; it&apos;s a haven for
+            those who aspire to redefine their limits. Join us in the epicenter of strength, where the journey is as
+            mighty as the lift. Welcome to a realm where ordinary becomes extraordinary, and every rep is a step toward
+            realizing your strongest self.
           </p>
         </div>
         <CardFrom />
