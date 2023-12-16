@@ -1,13 +1,15 @@
 import React from 'react'
+import { MapPinIcon } from '@heroicons/react/24/solid'
 
 const ContactComponent = () => {
   return (
     <section className="rounded-lg bg-gray-900">
       <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">Contact</h2>
-        <p className="m-8 lg:mb-16 font-light text-center text-gray-400 sm:text-xl">
-          Visit us at 123 Main Street, Chico, CA 95928
-        </p>
+        <div className="flex items-center justify-center m-8 lg:mb-16 font-light text-center text-gray-400 sm:text-xl">
+          <MapPinIcon className="h-6 w-6 text-white mr-2" />
+          <p>Visit us at 123 Main Street, Chico, CA 95928</p>
+        </div>
         <form action="#" className="space-y-8">
           <div>
             <label for="email" className="block mb-2 text-sm font-medium text-gray-300">

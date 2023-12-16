@@ -16,8 +16,11 @@ export default async function Home() {
       <Navbar />
       <div className="m-12">
         <PageTitle title="Ironhaus" />
-        <PageContent content="North State's Premier Strongman Training Center" />
-        <div className="flex flex-wrap flex-auto gap-6 my-6">
+        <p className="text-7xl text-white font-bold text-center">Welcome to Ironhaus</p>
+        <p className="mt-10 mb-20 text-3xl font-light text-white text-center">
+          North State's Premier Strongman Training Center
+        </p>
+        <div className="flex grow gap-6 justify-center flex-wrap lg:flex-nowrap">
           {cards.map((card) => (
             <Card
               key={card.id}
@@ -29,7 +32,12 @@ export default async function Home() {
             />
           ))}
         </div>
-        <PageContent content="Welcome to Ironhaus, where strength takes center stage. As the North State's Premier Strongman Training Center, our facility is equipped with every specialty implement you could dream of for the sport of Strongman and Powerlifting. Train alongside seasoned veterans and be part of a community fueled by collective strength pursuits." />
+        <p className="text-white text-3xl pt-20">
+          Welcome to Ironhaus, where strength takes center stage. As the North State's Premier Strongman Training
+          Center, our facility is equipped with every specialty implement you could dream of for the sport of Strongman
+          and Powerlifting. Train alongside seasoned veterans and be part of a community fueled by collective strength
+          pursuits.
+        </p>
         <Footer />
       </div>
     </div>

@@ -2,8 +2,8 @@ const defaultContent = `Lorem Ipsum is simply dummy text of the printing and typ
 
 export default function PageContent({ content = defaultContent }) {
   return (
-    <main className="bg-gradient-to-r from-black to-gray-900 rounded-md pb-8 text-4xl text-white font-medium">
-      {content}
+    <main className="bg-gradient-to-r from-black to-gray-900 rounded-md pb-8 text-5xl text-white font-medium flex items-center justify-center text-center">
+      <p>{content}</p>
     </main>
   )
 }

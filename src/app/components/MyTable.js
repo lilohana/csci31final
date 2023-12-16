@@ -30,7 +30,7 @@ const defaultRecords = [
 
 export default function MyTable({ columns = defaultColumns, records = defaultRecords }) {
   return (
-    <Table.Root>
+    <Table.Root className="p-8 bg-gray-500 rounded-lg mt-12 my-24">
       <Table.Header>
         <Table.Row>
           {columns.map((column, idx) => (

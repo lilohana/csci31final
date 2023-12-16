@@ -3,7 +3,7 @@ import Link from 'next/link'
 const cardLinks = {
   1: '/our-story',
   2: '/schedule',
-  3: '/join-now',
+  3: '/membership',
 }
 
 export default function Card({
@@ -16,8 +16,8 @@ export default function Card({
   const href = cardLinks[id]
   return (
     <Link href={href}>
-      <div className="border-solid border-2 border-gray-500 p-6 bg-gray-100 rounded-lg shadow-md text-gray-900 hover:scale-105 transition-transform cursor-pointer grow max-w-md">
-        <img className="rounded-xl" src={img} />
+      <div className="bg-gray-100 rounded-lg shadow-md text-gray-900 hover:scale-105 transition-transform cursor-pointer grow min-w-md max-w-xl">
+        <img className="rounded-lg" src={img} />
         <h1 className="font-bold text-xl px-5 pt-4 pb-2 underline cursor-pointer">{title}</h1>
         <h2 className="text-lg px-5">{subtitle}</h2>
         <p className="text-base px-5 py-2">{description}</p>

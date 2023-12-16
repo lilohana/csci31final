@@ -11,7 +11,7 @@ export default function Schedule() {
       <Navbar />
       <div className="m-12">
         <PageTitle title="Schedule" />
-        <PageContent content="schedule and events" />
+        <PageContent content="Training Schedule" />
         <div
           className="calendly-inline-widget"
           data-url="https://calendly.com/ironhaus/sundaystrongman"
